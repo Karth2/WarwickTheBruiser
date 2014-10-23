@@ -75,14 +75,13 @@ namespace WarwickTheBruiser
             menu.AddSubMenu(new Menu("Combo", "Combo"));
             menu.SubMenu("Combo").AddItem(new MenuItem("UseQCombo", "Use Q").SetValue(true));
             menu.SubMenu("Combo").AddItem(new MenuItem("UseWCombo", "Use W").SetValue(true));
-            menu.SubMenu("Combo").AddItem(new MenuItem("UseECombo", "Use E").SetValue(false));
             menu.SubMenu("Combo").AddItem(new MenuItem("UseRCombo", "Use R").SetValue(true));
             menu.SubMenu("Combo").AddItem(new MenuItem("ComboActive", "Combo!").SetValue(new KeyBind(menu.Item("Orbwalk").GetValue<KeyBind>().Key, KeyBindType.Press)));
 
             //Harass menu:
             menu.AddSubMenu(new Menu("Harass", "Harass"));
             menu.SubMenu("Harass").AddItem(new MenuItem("UseQHarass", "Use Q").SetValue(true));
-            menu.SubMenu("Harass").AddItem(new MenuItem("UseEHarass", "Use E").SetValue(false));
+            menu.SubMenu("Harass").AddItem(new MenuItem("UseWHarass", "Use W").SetValue(false));
             menu.SubMenu("Harass").AddItem(new MenuItem("HarassActive", "Harass!").SetValue(new KeyBind(menu.Item("Farm").GetValue<KeyBind>().Key, KeyBindType.Press)));
             menu.SubMenu("Harass").AddItem(new MenuItem("HarassActiveT", "Harass (toggle)!").SetValue(new KeyBind("Y".ToCharArray()[0], KeyBindType.Toggle)));
 
@@ -91,6 +90,12 @@ namespace WarwickTheBruiser
             menu.SubMenu("Farm").AddItem(new MenuItem("UseQFarm", "Use Q").SetValue(false));
             menu.SubMenu("Farm").AddItem(new MenuItem("UseWFarm", "Use W").SetValue(false));
             menu.SubMenu("Farm").AddItem(new MenuItem("LaneClearActive", "Farm!").SetValue(new KeyBind(menu.Item("LaneClear").GetValue<KeyBind>().Key, KeyBindType.Press)));
+
+            //Jungle menu:
+            menu.AddSubMenu(new Menu("Jungle", "Jungle"));
+            menu.SubMenu("Jungle").AddItem(new MenuItem("UseQJungle", "Use Q").SetValue(true));
+            menu.SubMenu("Jungle").AddItem(new MenuItem("UseWJungle", "Use W").SetValue(true));
+            menu.SubMenu("Jungle").AddItem(new MenuItem("LaneClearActive", "Jungle!").SetValue(new KeyBind(menu.Item("JungleClear").GetValue<KeyBind>().Key, KeyBindType.Press)));
 
             //Misc Menu:
             menu.AddSubMenu(new Menu("Misc", "Misc"));
@@ -127,7 +132,7 @@ namespace WarwickTheBruiser
             Drawing.OnDraw += Drawing_OnDraw;
             Interrupter.OnPossibleToInterrupt += Interrupter_OnPosibleToInterrupt;
             //Obj_AI_Base.OnProcessSpellCast += Obj_AI_Base_OnProcessSpellCast;
-            Game.PrintChat(ChampionName + " Loaded! --- by xSalice");
+            Game.PrintChat(ChampionName + " Loaded! --- by Karth2 with thanks to xSalice for 98% of the code (w/ permission)");
         }
 
         private static float GetComboDamage(Obj_AI_Base enemy)
@@ -222,7 +227,7 @@ namespace WarwickTheBruiser
         private static void Harass()
         {
             UseSpells(menu.Item("UseQHarass").GetValue<bool>(), false,
-                menu.Item("UseEHarass").GetValue<bool>(), false);
+                menu.Item("UseWHarass").GetValue<bool>(), false);
         }
 
         public static void checkUnderTower()
