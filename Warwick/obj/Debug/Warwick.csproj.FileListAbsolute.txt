@@ -1,0 +1,11 @@
+c:\users\justin and holly\documents\visual studio 2013\Projects\WarwickTheBruiser\Warwick\bin\Debug\Warwick.exe.config
+c:\users\justin and holly\documents\visual studio 2013\Projects\WarwickTheBruiser\Warwick\obj\Debug\Warwick.csprojResolveAssemblyReference.cache
+c:\users\justin and holly\documents\visual studio 2013\Projects\WarwickTheBruiser\Warwick\bin\Debug\Warwick.exe
+c:\users\justin and holly\documents\visual studio 2013\Projects\WarwickTheBruiser\Warwick\bin\Debug\Warwick.pdb
+c:\users\justin and holly\documents\visual studio 2013\Projects\WarwickTheBruiser\Warwick\bin\Debug\LeagueSharp.Common.dll
+c:\users\justin and holly\documents\visual studio 2013\Projects\WarwickTheBruiser\Warwick\bin\Debug\LeagueSharp.dll
+c:\users\justin and holly\documents\visual studio 2013\Projects\WarwickTheBruiser\Warwick\bin\Debug\SharpDX.dll
+c:\users\justin and holly\documents\visual studio 2013\Projects\WarwickTheBruiser\Warwick\bin\Debug\SharpDX.Direct3D9.dll
+c:\users\justin and holly\documents\visual studio 2013\Projects\WarwickTheBruiser\Warwick\bin\Debug\LeagueSharp.xml
+c:\users\justin and holly\documents\visual studio 2013\Projects\WarwickTheBruiser\Warwick\obj\Debug\Warwick.exe
+c:\users\justin and holly\documents\visual studio 2013\Projects\WarwickTheBruiser\Warwick\obj\Debug\Warwick.pdb
